@@ -1,0 +1,12 @@
+<h1>Aniversariantes do mês</h1>
+<div class="card">
+  {{#each aniversariantes}}
+  <div class="item_card">
+    <p><strong>Nome:</strong> {{this.nome}}</p>
+    <p><strong>Email:</strong> {{this.email}}</p>
+    <p><strong>Cidade:</strong> {{this.cidade}}</p>
+    <p><strong>Estado:</strong> {{this.estado}}</p>
+    <p><strong>Data nascimento:</strong> {{this.data_nascimento}}</p>
+  </div>
+  {{/each}}
+</div>

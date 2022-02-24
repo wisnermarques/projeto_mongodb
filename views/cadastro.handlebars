@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Cadastro de Funcionários</h1>
+  <form action="/funcionarios/cadastro" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome">
+    <label for="endereco">Endereço:</label>
+    <input type="text" name="endereco">
+    <label for="cidade">Cidade:</label>
+    <input type="text" name="cidade">
+    <label for="estado">Estado:</label>
+    <select name="estado">
+      <option value="GO">GO</option>
+      <option value="MG">MG</option>
+      <option value="SP">SP</option>
+    </select>
+    <label for="email">Email:</label>
+    <input type="email" name="email">
+    <label for="data_nascimento">Data nascimento:</label>
+    <input type="date" name="data_nascimento">
+    <label for="salario">Salário:</label>
+    <input type="number" name="salario" step="0.01">
+    <input type="submit" value="Cadastrar">
+  </form>
+</div>

@@ -1,0 +1,24 @@
+<h1>Lista de Funcionários</h1>
+<div class="card">
+  {{#each funcionarios}}
+  <div class="item_card">
+    <p><strong>Nome: </strong> {{this.nome}}</p>
+    <p><strong>Endereço: </strong> {{this.endereco}}</p>
+    <p><strong>Cidade: </strong> {{this.cidade}}</p>
+    <p><strong>Estado: </strong> {{this.estado}}</p>
+    <p><strong>Email: </strong> {{this.email}}</p>
+    <p><strong>Data nascimento: </strong> {{this.data_nascimento}}</p>
+    <p><strong>Salário: </strong> {{this.salario}}</p>
+    <div class="icon">
+      <a href="/funcionarios/{{this._id}}">
+        <img src="/img/edit.png" alt="edit">
+      </a>
+      <form action="/funcionarios/{{this._id}}" method="post">
+        <button type="submit">
+          <img src="/img/delete.png" alt="delete">
+        </button>
+      </form>
+    </div>
+  </div>
+  {{/each}}
+</div>

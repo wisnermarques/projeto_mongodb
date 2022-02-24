@@ -1,0 +1,19 @@
+<h1>Relatório</h1>
+<div class="table_container">
+  <table id="table">
+    <tr>
+      <th>Estado</th>
+      <th>Número de funcionários</th>
+      <th>Total</th>
+      <th>Média</th>
+    </tr>
+    {{#each relatorio}}
+    <tr>
+      <td>{{this._id}}</td>
+      <td>{{this.qtde}}</td>
+      <td>R$ {{this.total}}</td>
+      <td>R$ {{this.media}}</td>
+    </tr>
+    {{/each}}
+  </table>
+</div>
